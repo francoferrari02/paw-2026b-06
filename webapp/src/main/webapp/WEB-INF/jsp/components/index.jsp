@@ -19,13 +19,9 @@
     <div class="demo-row">
         <paw:button text="Primary" />
         <paw:button text="Danger" variant="danger" />
+        <paw:button text="Outline" variant="outline" />
         <paw:button text="Large" size="lg" />
         <paw:button text="Deshabilitado" disabled="true" />
-    </div>
-
-    <div class="demo-row">
-        <span class="demo-label">Escape XSS</span>
-        <paw:button text="${textoPeligroso}" variant="outline" />
     </div>
 </section>
 
@@ -51,12 +47,12 @@
                 actionText="Comparar" />
 
         <paw:productCard
-                name="${textoPeligroso}"
-                brand="Demo de escape"
-                price="$0"
-                servings="1"
-                pricePerServing="$0"
-                protein="0g"
+                name="Creatina Monohidratada Micronizada"
+                brand="ENA Sport"
+                price="$18.500"
+                servings="60"
+                pricePerServing="$308"
+                protein="0g por porcion"
                 date="19/08/2026"
                 actionText="Ver detalle" />
     </div>
@@ -78,8 +74,8 @@
 
         <paw:alert
                 variant="danger"
-                title="Demo de escape"
-                message="${textoPeligroso}" />
+                title="No se pudo publicar"
+                message="Revisa los datos del formulario e intenta nuevamente." />
     </div>
 </section>
 
@@ -91,7 +87,7 @@
         <paw:badge text="Proteina" variant="primary" />
         <paw:badge text="Vendedor verificado" variant="success" />
         <paw:badge text="Precio alto" variant="warning" />
-        <paw:badge text="${textoPeligroso}" variant="danger" />
+        <paw:badge text="Sin stock" variant="danger" />
     </div>
 </section>
 

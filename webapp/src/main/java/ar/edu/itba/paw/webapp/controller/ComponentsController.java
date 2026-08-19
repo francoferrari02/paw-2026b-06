@@ -13,11 +13,6 @@ public class ComponentsController {
 
     @RequestMapping("/components")
     public ModelAndView components() {
-        final ModelAndView mav = new ModelAndView("components/index");
-
-        // Texto con HTML adentro, para demostrar el escapeo de <c:out> en el boton.
-        mav.addObject("textoPeligroso", "<script>alert('XSS')</script>");
-
-        return mav;
+        return new ModelAndView("components/index");
     }
 }

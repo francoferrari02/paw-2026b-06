@@ -1,0 +1,145 @@
+/* ==========================================================================
+   Librería de componentes - PAW 2026b
+   Un bloque de estilos por cada componente de /WEB-INF/tags
+   ========================================================================== */
+
+/* Box model: padding y border cuentan adentro del width (clase 2) */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* --------------------------------------------------------------------------
+   button.tag
+   Las clases se arman desde los atributos: variant -> .btn-primary
+                                            size    -> .btn-md
+   -------------------------------------------------------------------------- */
+.btn {
+    display: inline-block;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+                border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    user-select: none;
+}
+
+.btn:hover {
+    text-decoration: none;
+}
+
+.btn:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+
+.btn:disabled {
+    opacity: 0.65;
+    cursor: not-allowed;
+}
+
+/* Variantes: definen el color -------------------------------------------- */
+.btn-primary {
+    color: #fff;
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+}
+
+.btn-primary:hover:not(:disabled) {
+    background-color: #0b5ed7;
+    border-color: #0a58ca;
+}
+
+.btn-secondary {
+    color: #fff;
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+
+.btn-secondary:hover:not(:disabled) {
+    background-color: #5c636a;
+    border-color: #565e64;
+}
+
+.btn-danger {
+    color: #fff;
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+.btn-danger:hover:not(:disabled) {
+    background-color: #bb2d3b;
+    border-color: #b02a37;
+}
+
+.btn-outline {
+    color: #0d6efd;
+    background-color: transparent;
+    border-color: #0d6efd;
+}
+
+.btn-outline:hover:not(:disabled) {
+    color: #fff;
+    background-color: #0d6efd;
+}
+
+/* Tamaños: definen padding y tipografía ----------------------------------- */
+.btn-sm {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+    border-radius: 0.2rem;
+}
+
+.btn-md {
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+}
+
+.btn-lg {
+    padding: 0.5rem 1rem;
+    font-size: 1.25rem;
+    border-radius: 0.3rem;
+}
+
+/* --------------------------------------------------------------------------
+   Utilidades de la página de demostración (no son componentes)
+   -------------------------------------------------------------------------- */
+body {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    margin: 0;
+    padding: 2rem;
+    color: #212529;
+}
+
+.demo-section {
+    margin-bottom: 2.5rem;
+}
+
+.demo-section > h2 {
+    font-size: 1.125rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #dee2e6;
+}
+
+/* Flexbox: el padre ordena a los hijos con pocas líneas (clase 2) */
+.demo-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    align-items: center;
+    margin-bottom: 0.75rem;
+}
+
+.demo-label {
+    min-width: 9rem;
+    font-size: 0.8125rem;
+    color: #6c757d;
+}

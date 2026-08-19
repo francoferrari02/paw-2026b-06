@@ -1,0 +1,24 @@
+# --- Maven -----------------------------------------------------------------
+# Todo lo generado por la compilacion. Se reconstruye con `mvn install`.
+target/
+*.jar
+*.war
+*.class
+
+# --- IDEs ------------------------------------------------------------------
+# Configuracion local de cada desarrollador, no del proyecto.
+.idea/
+*.iml
+*.iws
+*.ipr
+.vscode/
+.settings/
+.project
+.classpath
+
+# --- Sistema operativo -----------------------------------------------------
+.DS_Store
+Thumbs.db
+
+# --- Logs y temporales -----------------------------------------------------
+*.log

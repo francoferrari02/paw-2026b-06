@@ -110,6 +110,141 @@
 }
 
 /* --------------------------------------------------------------------------
+   productCard.tag
+   -------------------------------------------------------------------------- */
+.product-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: min(100%, 22rem);
+    min-height: 18rem;
+    padding: 1rem;
+    border: 1px solid #dee2e6;
+    border-radius: 0.5rem;
+    background-color: #fff;
+    box-shadow: 0 0.25rem 0.75rem rgba(33, 37, 41, 0.08);
+}
+
+.product-card__brand {
+    margin: 0 0 0.25rem;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #6c757d;
+}
+
+.product-card__name {
+    margin: 0 0 1rem;
+    font-size: 1.25rem;
+    line-height: 1.25;
+    color: #212529;
+}
+
+.product-card__metrics {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.75rem;
+    margin: 0;
+}
+
+.product-card__metric {
+    min-width: 0;
+}
+
+.product-card__metric dt {
+    margin-bottom: 0.125rem;
+    font-size: 0.75rem;
+    color: #6c757d;
+}
+
+.product-card__metric dd {
+    margin: 0;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #212529;
+}
+
+.product-card__metric--price dd {
+    color: #0d6efd;
+}
+
+.product-card__date {
+    margin: 1rem 0 0;
+    font-size: 0.8125rem;
+    color: #6c757d;
+}
+
+.product-card__actions {
+    margin-top: 1rem;
+}
+
+/* --------------------------------------------------------------------------
+   input.tag
+   -------------------------------------------------------------------------- */
+.form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.375rem;
+    width: min(100%, 24rem);
+}
+
+.form-field__label {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #212529;
+}
+
+.form-field__required {
+    color: #dc3545;
+}
+
+.form-field__input {
+    width: 100%;
+    min-height: 2.5rem;
+    padding: 0.5rem 0.75rem;
+    font: inherit;
+    color: #212529;
+    border: 1px solid #adb5bd;
+    border-radius: 0.25rem;
+    background-color: #fff;
+}
+
+.form-field__input:focus {
+    outline: 0;
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+
+.form-field__input:disabled {
+    color: #6c757d;
+    background-color: #e9ecef;
+    cursor: not-allowed;
+}
+
+.form-field__input--error {
+    border-color: #dc3545;
+}
+
+.form-field__input--error:focus {
+    box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.2);
+}
+
+.form-field__help,
+.form-field__error {
+    margin: 0;
+    font-size: 0.8125rem;
+}
+
+.form-field__help {
+    color: #6c757d;
+}
+
+.form-field__error {
+    color: #dc3545;
+}
+
+/* --------------------------------------------------------------------------
    Utilidades de la página de demostración (no son componentes)
    -------------------------------------------------------------------------- */
 body {
@@ -136,6 +271,18 @@ body {
     gap: 0.5rem;
     align-items: center;
     margin-bottom: 0.75rem;
+}
+
+.demo-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.demo-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
 .demo-label {

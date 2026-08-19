@@ -32,6 +32,13 @@
 <section class="demo-section">
     <h2>productCard.tag</h2>
 
+    <div class="demo-row">
+        <paw:badge text="Proteina" variant="primary" />
+        <paw:badge text="Oferta" variant="success" />
+        <paw:badge text="Stock limitado" variant="warning" />
+        <paw:badge text="Sin stock" variant="danger" />
+    </div>
+
     <div class="demo-grid">
         <paw:productCard
                 name="Whey Protein Gold"
@@ -52,6 +59,39 @@
                 protein="0g"
                 date="19/08/2026"
                 actionText="Ver detalle" />
+    </div>
+</section>
+
+<section class="demo-section">
+    <h2>alert.tag</h2>
+
+    <div class="demo-stack">
+        <paw:alert
+                variant="success"
+                title="Producto publicado"
+                message="La publicacion ya esta visible para compradores." />
+
+        <paw:alert
+                variant="warning"
+                title="Stock limitado"
+                message="Quedan pocas unidades disponibles para este suplemento." />
+
+        <paw:alert
+                variant="danger"
+                title="Demo de escape"
+                message="${textoPeligroso}" />
+    </div>
+</section>
+
+<section class="demo-section">
+    <h2>badge.tag</h2>
+
+    <div class="demo-row">
+        <paw:badge text="Creatina" />
+        <paw:badge text="Proteina" variant="primary" />
+        <paw:badge text="Vendedor verificado" variant="success" />
+        <paw:badge text="Precio alto" variant="warning" />
+        <paw:badge text="${textoPeligroso}" variant="danger" />
     </div>
 </section>
 
